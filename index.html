@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agendamentos Clínica Odontológica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📅 Agendamentos Clínica Odontológica</h1>
+
+<div class="acoes">
+    <button id="adicionar-linha">+ Adicionar Linha</button>
+    <button id="salvar-dados">💾 Salvar Dados</button>
+    <button id="limpar-tabela">🧹 Limpar Tabela</button>
+</div>
+
+<table id="tabela">
+<thead>
+<tr>
+<th>Nome do Paciente</th>
+<th>Data do Agendamento</th>
+<th>Forma de Pagamento</th>
+<th>Status</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody id="tabela-body">
+<!-- Linhas serão geradas pelo JS -->
+</tbody>
+</table>
+
+<button id="toggle-historico">👁️ Mostrar/Esconder Histórico</button>
+
+<h2>📜 Histórico de Pacientes</h2>
+<table id="tabela-historico">
+<thead>
+<tr>
+<th>Nome do Paciente</th>
+<th>Data do Agendamento</th>
+<th>Forma de Pagamento</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="tabela-historico-body">
+<!-- Histórico será gerado pelo JS -->
+</tbody>
+</table>
+
+<script src="clinica.js" defer></script>
+</body>
+</html>
+
+

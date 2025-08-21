@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fff8e1;
+    color: #333;
+}
+
+h1,h2 {
+    text-align:center;
+    color:#ffb300;
+    margin-bottom:15px;
+}
+
+.acoes {
+    text-align:right;
+    margin-bottom:10px;
+}
+
+button {
+    padding:8px 12px;
+    margin-right:5px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:14px;
+}
+
+#adicionar-linha{background-color:#ffca28;color:#333;}
+#adicionar-linha:hover{background-color:#ffc107;}
+#salvar-dados{background-color:#ffd54f;color:#333;}
+#salvar-dados:hover{background-color:#ffca28;}
+#limpar-tabela{background-color:#ffe082;color:#333;}
+#limpar-tabela:hover{background-color:#ffd54f;}
+#toggle-historico{
+    margin-bottom:10px;
+    background-color:#ffd54f;
+    color:#333;
+    padding:6px 10px;
+    border-radius:6px;
+    cursor:pointer;
+}
+#toggle-historico:hover{background-color:#ffca28;}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+    background:#fffde7;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+
+thead {background-color:#ffb300; color:white;}
+th,td{padding:12px;text-align:center;border-bottom:1px solid #ffd54f;}
+tbody tr:nth-child(even){background-color:#fff8e1;}
+tbody tr:hover{background-color:#fff3e0;}
+input,select{
+    width:95%;
+    padding:6px;
+    border:1px solid #ffca28;
+    border-radius:4px;
+    background:#fffde7;
+}
+.status-select{width:90%; padding:5px;}
+.btn-deletar{
+    background-color:#ff7043;
+    color:white;
+    padding:6px 10px;
+    border-radius:6px;
+}
+.btn-deletar:hover{background-color:#f4511e;}
+
+#tabela-historico thead {background-color:#ffb300;color:white;}
+#tabela-historico th,#tabela-historico td{padding:10px;text-align:center;border-bottom:1px solid #ffd54f;}
+#tabela-historico tbody tr:nth-child(even){background-color:#fff8e1;}
+#tabela-historico tbody tr:hover{background-color:#fff3e0;}
+#tabela-historico,h2{display:none;}
+
+/* Cores para status */
+td[data-status="agendado"]{background-color:#fff59d;}    /* amarelo */
+td[data-status="compareceu"]{background-color:#a5d6a7;}   /* verde */
+td[data-status="faltou"]{background-color:#ef9a9a;}       /* vermelho */
+
+
